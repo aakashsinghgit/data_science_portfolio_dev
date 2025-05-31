@@ -1,0 +1,41 @@
+<script>
+document.addEventListener("scroll", function() {
+  var basicSection = document.getElementById("basic-ds");
+  var sidebar = document.querySelector(".sidebar");
+  if (!basicSection || !sidebar) return;
+  var rect = basicSection.getBoundingClientRect();
+  // Check if the section's bottom is above the top of the viewport
+  if (rect.bottom < 0) {
+    sidebar.style.transform = "translateX(-100%)";
+    sidebar.style.transition = "transform 0.3s";
+  } else {
+    sidebar.style.transform = "translateX(0)";
+    sidebar.style.transition = "transform 0.3s";
+  }
+});
+</script>
+
+<div id="author-profile-fade">
+  {% include author-profile.html %}
+</div>
+<style>
+  #author-profile-fade {
+    transition: opacity 0.5s;
+  }
+  #author-profile-fade.hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+</style>
+<script>
+  window.addEventListener('scroll', function() {
+    var profile = document.getElementById('author-profile-fade');
+    if (profile) {
+      if (window.scrollY > 200) {
+        profile.classList.add('hide');
+      } else {
+        profile.classList.remove('hide');
+      }
+    }
+  });
+</script>
