@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ML/AI/Data Science Roadmap</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background-color: #f5f7fa;
+    }
+    h1 {
+      color: #333;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 20px;
+    }
+    .node {
+      cursor: pointer;
+      user-select: none;
+      margin: 5px 0;
+    }
+    .nested {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+    .caret::before {
+      content: "▶";
+      color: #555;
+      display: inline-block;
+      margin-right: 6px;
+      transform: rotate(0deg);
+      transition: transform 0.2s ease;
+    }
+    .caret-down::before {
+      transform: rotate(90deg);
+    }
+    .level {
+      font-weight: bold;
+      color: #2c3e50;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>📚 Machine Learning / Data Science Roadmap</h1>
+  <ul>
+    <li><span class="caret level">Beginner</span>
+      <ul class="nested">
+        <li>Python Basics (Variables, Loops, Functions)</li>
+        <li>Statistics & Probability</li>
+        <li>Data Cleaning & Pandas</li>
+        <li>Data Visualization (Matplotlib / Seaborn)</li>
+        <li>Git & Version Control</li>
+      </ul>
+    </li>
+    <li><span class="caret level">Intermediate</span>
+      <ul class="nested">
+        <li>Supervised Learning (Linear, Logistic Regression)</li>
+        <li>Unsupervised Learning (KMeans, PCA)</li>
+        <li>Model Evaluation (Confusion Matrix, ROC-AUC)</li>
+        <li>SQL for Data Analysis</li>
+        <li>Feature Engineering</li>
+      </ul>
+    </li>
+    <li><span class="caret level">Advanced</span>
+      <ul class="nested">
+        <li>Neural Networks (ANN, CNN, RNN)</li>
+        <li>Deep Learning Frameworks (TensorFlow, PyTorch)</li>
+        <li>NLP (Tokenization, Transformers, BERT)</li>
+        <li>MLOps (Docker, Flask, Deployment)</li>
+        <li>Big Data Tools (Spark, Hadoop)</li>
+      </ul>
+    </li>
+    <li><span class="caret level">Specializations</span>
+      <ul class="nested">
+        <li>Computer Vision (YOLO, Image Segmentation)</li>
+        <li>Recommendation Systems</li>
+        <li>Reinforcement Learning</li>
+        <li>Data Engineering (ETL, Airflow, Data Lakes)</li>
+        <li>AI Ethics, Fairness, Explainability</li>
+      </ul>
+    </li>
+  </ul>
+
+  <script>
+    const toggles = document.getElementsByClassName("caret");
+    for (let i = 0; i < toggles.length; i++) {
+      toggles[i].addEventListener("click", function () {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+      });
+    }
+  </script>
+</body>
+</html>
