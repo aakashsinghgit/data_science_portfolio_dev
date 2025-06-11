@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>ML/AI/Data Science Roadmap</title>
+  <meta charset="UTF-8" />
+  <title>ML Roadmap</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: Arial, sans-serif;
       padding: 20px;
-      background-color: #f5f7fa;
-    }
-    h1 {
-      color: #333;
+      background: #f9f9f9;
     }
     ul {
       list-style-type: none;
       padding-left: 20px;
     }
-    .node {
+    .caret {
       cursor: pointer;
       user-select: none;
-      margin: 5px 0;
+      font-weight: bold;
+    }
+    .caret::before {
+      content: "➕";
+      color: #555;
+      display: inline-block;
+      margin-right: 6px;
+    }
+    .caret-down::before {
+      content: "➖";
     }
     .nested {
       display: none;
@@ -27,61 +33,48 @@
     .active {
       display: block;
     }
-    .caret::before {
-      content: "▶";
-      color: #555;
-      display: inline-block;
-      margin-right: 6px;
-      transform: rotate(0deg);
-      transition: transform 0.2s ease;
-    }
-    .caret-down::before {
-      transform: rotate(90deg);
-    }
-    .level {
-      font-weight: bold;
-      color: #2c3e50;
-      margin-top: 10px;
+    li {
+      margin: 4px 0;
     }
   </style>
 </head>
 <body>
-  <h1>📚 Machine Learning / Data Science Roadmap</h1>
+  <h2>🧠 Machine Learning / Data Science Roadmap</h2>
   <ul>
-    <li><span class="caret level">Beginner</span>
+    <li><span class="caret">Beginner</span>
       <ul class="nested">
         <li>Python Basics (Variables, Loops, Functions)</li>
         <li>Statistics & Probability</li>
-        <li>Data Cleaning & Pandas</li>
-        <li>Data Visualization (Matplotlib / Seaborn)</li>
-        <li>Git & Version Control</li>
+        <li>Linear Algebra & Calculus (Basics)</li>
+        <li>Data Wrangling (Pandas, Numpy)</li>
+        <li>Data Visualization (Matplotlib, Seaborn)</li>
       </ul>
     </li>
-    <li><span class="caret level">Intermediate</span>
+    <li><span class="caret">Intermediate</span>
       <ul class="nested">
-        <li>Supervised Learning (Linear, Logistic Regression)</li>
-        <li>Unsupervised Learning (KMeans, PCA)</li>
-        <li>Model Evaluation (Confusion Matrix, ROC-AUC)</li>
-        <li>SQL for Data Analysis</li>
+        <li>Supervised Learning (Linear/Logistic Regression, Trees)</li>
+        <li>Unsupervised Learning (Clustering, PCA)</li>
+        <li>Model Evaluation (Metrics, Cross-validation)</li>
+        <li>SQL for Data Science</li>
         <li>Feature Engineering</li>
       </ul>
     </li>
-    <li><span class="caret level">Advanced</span>
+    <li><span class="caret">Advanced</span>
       <ul class="nested">
-        <li>Neural Networks (ANN, CNN, RNN)</li>
-        <li>Deep Learning Frameworks (TensorFlow, PyTorch)</li>
-        <li>NLP (Tokenization, Transformers, BERT)</li>
-        <li>MLOps (Docker, Flask, Deployment)</li>
+        <li>Neural Networks & Deep Learning</li>
+        <li>Natural Language Processing (NLP)</li>
         <li>Big Data Tools (Spark, Hadoop)</li>
+        <li>MLOps (Docker, CI/CD, Model Deployment)</li>
+        <li>Cloud Platforms (AWS/GCP/Azure)</li>
       </ul>
     </li>
-    <li><span class="caret level">Specializations</span>
+    <li><span class="caret">Specializations</span>
       <ul class="nested">
-        <li>Computer Vision (YOLO, Image Segmentation)</li>
+        <li>Computer Vision</li>
         <li>Recommendation Systems</li>
         <li>Reinforcement Learning</li>
-        <li>Data Engineering (ETL, Airflow, Data Lakes)</li>
-        <li>AI Ethics, Fairness, Explainability</li>
+        <li>AI Ethics & Fairness</li>
+        <li>Research & Paper Reproduction</li>
       </ul>
     </li>
   </ul>
