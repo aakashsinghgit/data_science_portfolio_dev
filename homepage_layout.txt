@@ -1,0 +1,89 @@
+=====================================================
+|                 MAIN PAGE LAYOUT                  |
+=====================================================
+
+[ SIDEBAR (LEFT) ]
+-----------------------------------------------------
+| [Profile Picture]                                 |
+| [Your Name]                                       |
+| [Short Bio / Tagline]                             |
+|                                                   |
+| [Quick Links]                                     |
+|   - Resume/CV                                     |
+|   - GitHub                                        |
+|   - LinkedIn                                      |
+|   - Email                                         |
+|                                                   |
+| [Kaggle Badge/Button]                             |
+|   - "Classic ML Notebooks"                        |
+|                                                   |
+| [STEM Callout/Link]                               |
+|   - "Explore Code-Meets-Cosmos"                   |
+|                                                   |
+| [Skills/Certifications/Languages] (optional)      |
+| [Mini Progress Tracker/Changelog] (optional)      |
+-----------------------------------------------------
+
+[ MAIN CONTENT (RIGHT) ]
+=====================================================
+
+|------------------- SECTION TABS ------------------|
+|  [ML Playground] | [ML Engineering] | [AI Engineering] | [Open Source] | [Blog] |
+|---------------------------------------------------|
+
+[ HERO SECTION ]
+-----------------------------------------------------
+| [Welcome Banner / Hero Image]                     |
+| [Headline: "Hi, I'm [Name] – Data & AI Engineer"] |
+| [Short Intro: Mission, focus, or recent highlight]|
+-----------------------------------------------------
+
+[ ML PLAYGROUND (Tab/Section 1) ]
+-----------------------------------------------------
+| [Interactive Demos Previews]                      |
+|   - ANN Visualizer, Titanic Survival, etc.        |
+|   - Expandable in-place for quick try             |
+|   - "See all playgrounds" expands this section    |
+-----------------------------------------------------
+
+[ ML ENGINEERING PROJECTS (Tab/Section 2) ]
+-----------------------------------------------------
+| [2-3 Featured Projects]                           |
+|   - Project Card: Title, short blurb, tags        |
+|   - Visual or badge (e.g., "Production Ready")    |
+|   - "See more projects" → All Projects page       |
+-----------------------------------------------------
+
+[ AI ENGINEERING PROJECTS (Tab/Section 3) ]
+-----------------------------------------------------
+| [2-3 Featured Projects]                           |
+|   - Project Card: Title, short blurb, tags        |
+|   - Visual or badge (e.g., "LLM", "CV")           |
+|   - "See more projects" → All Projects page       |
+-----------------------------------------------------
+
+[ OPEN SOURCE (Tab/Section 4) ]
+-----------------------------------------------------
+| [2-3 Highlighted Contributions]                   |
+|   - Repo name, summary, link to PR/Repo           |
+|   - "See all OSS work" → Open Source page         |
+-----------------------------------------------------
+
+[ BLOG (Tab/Section 5) ]
+-----------------------------------------------------
+| [3 Latest Blog Posts]                             |
+|   - Title, excerpt, "Read More"                   |
+|   - "See all blog posts" → Blog page              |
+-----------------------------------------------------
+
+[ PROGRESS TRACKER / TIMELINE ] (optional, bottom or floating)
+-----------------------------------------------------
+| [Current version, recent updates, roadmap]        |
+| [Clickable visual timeline of site/project updates]|
+-----------------------------------------------------
+
+=====================================================
+|               FOOTER (BOTTOM)                     |
+=====================================================
+| [Contact Info] | [Social Links] | [Legal/Attribution] |
+=====================================================
